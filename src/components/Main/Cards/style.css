@@ -1,0 +1,46 @@
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-card,
+.entry-card,
+.expense-card {
+    width: 215px;
+    height: 100px;
+    color: white;
+    border-radius: 1rem;
+    background-color: #212062;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.title-card {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.value-card {
+    font-weight: 500;
+    font-size: 30px;
+    text-indent: initial;
+}
+
+.total-card {
+    background-color: #00e676;
+    border: 1px solid #1DB9C3;
+}
+
+.entry-card {
+    border: 1px solid #00eeff;
+}
+
+.expense-card {
+    border: 1px solid #ff000d;
+}

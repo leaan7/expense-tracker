@@ -1,0 +1,25 @@
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+    display: flex;
+    justify-content: right;
+}
+.add-button {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.add-button img{
+    opacity: .7;
+    transition: .3s;
+}
+
+.add-button:hover img {
+    opacity: 1;
+}
