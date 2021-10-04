@@ -7,9 +7,12 @@ export function TransactionProvider (props) {
     const [transactions, setTransaction] = useState([])
 
     useEffect(() => {
-        const storage = JSON.parse(localStorage.getItem('transactions'))
-        setTransaction([...storage])
-    }, [])
+    if (localStorage.getItem("transactions")) {
+      const storage = JSON.parse(localStorage.getItem("transactions"));
+      setTransaction([...storage]);
+    }
+  }, []);
+
 
     useEffect(() => {
         localStorage.setItem('transactions', JSON.stringify(transactions))
